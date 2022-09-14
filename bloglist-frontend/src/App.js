@@ -12,7 +12,7 @@ import { initializeUsers } from "./reducers/userReducer"
 import { initializeBlogs } from "./reducers/blogReducer"
 import { useEffect, useRef} from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { Container } from "@mui/material";
+import { Container } from "@mui/material"
 
 
 
