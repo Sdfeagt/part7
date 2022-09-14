@@ -53,6 +53,6 @@ const AddBlogForm = ({
     </div>
     <button type="submit">Add Blog</button>
   </form>
-);
+)
 
-export default AddBlogForm;
+export default AddBlogForm

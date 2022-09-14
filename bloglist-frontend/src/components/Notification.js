@@ -4,7 +4,7 @@ const Notification = ({ message }) => {
     return null
   }
 
-  return <div className="completedoperation">{message}</div>;
-};
+  return <div className="completedoperation">{message}</div>
+}
 
-export default Notification;
+export default Notification

@@ -1,11 +1,11 @@
-import { useState } from "react";
-import blogService from "../services/blogs";
+import { useState } from "react"
+import blogService from "../services/blogs"
 
 const Blog = ({ ...blog }) => {
-  const [detailsVisible, setDetailsVisible] = useState(false);
+  const [detailsVisible, setDetailsVisible] = useState(false)
 
-  const showWhenVisible = { display: detailsVisible ? "" : "none" };
-  const hideWhenVisible = { display: detailsVisible ? "none" : "" };
+  const showWhenVisible = { display: detailsVisible ? "" : "none" }
+  const hideWhenVisible = { display: detailsVisible ? "none" : "" }
 
   const updateBlog = async (event) => {
     const blogObject = {
@@ -13,17 +13,17 @@ const Blog = ({ ...blog }) => {
       author: blog.author,
       url: blog.url,
       likes: blog.likes + 1,
-    };
+    }
 
-    blogService.update(blog.id, blogObject);
+    blogService.update(blog.id, blogObject)
 
-    window.location.reload();
-  };
+    window.location.reload()
+  }
 
   const deleteBlog = async (event) => {
-    blogService.remove(blog.id);
-    window.location.reload();
-  };
+    blogService.remove(blog.id)
+    window.location.reload()
+  }
 
   return (
     <div>
@@ -47,7 +47,7 @@ const Blog = ({ ...blog }) => {
         </div>
       </li>
     </div>
-  );
-};
+  )
+}
 
-export default Blog;
+export default Blog
