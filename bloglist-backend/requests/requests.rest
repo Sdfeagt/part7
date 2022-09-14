@@ -1,0 +1,19 @@
+POST      http://localhost:3003/api/blogs HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QxMjMiLCJpZCI6IjYyZjUwNGI1MDdjNThiZDQ5MTY2Yjg4MiIsImlhdCI6MTY2MDMxNjkzNSwiZXhwIjoxNjYwMzIwNTM1fQ.XvQMBXbJU7kAKuk9OkP2SwjF0xoL7wSRBUVXwZc0PuY
+
+{
+      "title": "testing is really combersome",
+      "author": "And not as exciting as creating functions",
+      "url": "voggov.com",
+      "likes": "5000"
+}
+
+   //   "title": "How to kill your ex",
+   //   "author": "John T Roosevelt",
+   //   "url": "voggov.com",
+   //   "likes": "5000"
+
+   //   "username": "root123",
+   //   "name": "root",
+   //    "password": "toor"
