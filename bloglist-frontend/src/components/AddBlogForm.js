@@ -1,8 +1,18 @@
-const AddBlogForm = ({ addBlog, title, handleTitleChange, author, handleAuthorChange, url, handleUrlChange, likes, handleLikesChange }) => (
+const AddBlogForm = ({
+  addBlog,
+  title,
+  handleTitleChange,
+  author,
+  handleAuthorChange,
+  url,
+  handleUrlChange,
+  likes,
+  handleLikesChange,
+}) => (
   <form onSubmit={addBlog}>
     <p>Add a blog</p>
     <div>
-          Title
+      Title
       <input
         type="text"
         value={title}
@@ -12,7 +22,7 @@ const AddBlogForm = ({ addBlog, title, handleTitleChange, author, handleAuthorCh
       />
     </div>
     <div>
-          Author
+      Author
       <input
         type="text"
         value={author}
@@ -22,7 +32,7 @@ const AddBlogForm = ({ addBlog, title, handleTitleChange, author, handleAuthorCh
       />
     </div>
     <div>
-          Url
+      Url
       <input
         type="text"
         value={url}
@@ -32,7 +42,7 @@ const AddBlogForm = ({ addBlog, title, handleTitleChange, author, handleAuthorCh
       />
     </div>
     <div>
-          Likes
+      Likes
       <input
         type="number"
         value={likes}
@@ -42,8 +52,7 @@ const AddBlogForm = ({ addBlog, title, handleTitleChange, author, handleAuthorCh
       />
     </div>
     <button type="submit">Add Blog</button>
-
   </form>
-)
+);
 
-export default AddBlogForm
+export default AddBlogForm;
